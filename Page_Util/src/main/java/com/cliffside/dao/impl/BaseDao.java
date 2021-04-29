@@ -1,13 +1,16 @@
-package com.msb.dao.impl;
+package com.cliffside.dao.impl;
 
 
 import java.lang.reflect.Field;
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @Author: Ma HaiYang
+ * @Author:
  * @Description: MircoMessage:Mark_7001
  */
 public abstract class BaseDao {

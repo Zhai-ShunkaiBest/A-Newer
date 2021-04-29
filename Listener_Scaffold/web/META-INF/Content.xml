@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Session序列化和反序列化
+
+1、序列化与反序列
+
+把对象转化为字节序列的过程称为序列化（保存到硬盘，持久化）
+
+把字节序列转化为对象的过程称为反序列化（存放于内存）
+
+ 2、序列化的用途
+
+把对象的字节序列永久保存到硬盘上，通常放到一个文件中。
+
+把网络传输的对象通过字节序列化，方便传输本节作业
+
+3、实现步骤
+
+     要想实现序列化和反序列化需要手动配置
+           A、新建文件
+            B、 Context.xml中文件如
+            C、注意实体类必须实现serializable 接口-->
+<Context>
+
+    <Manager className="org.apache.catalina.session.PersistentManager">
+
+        <Store className="org.apache.catalina.session.FileStore" directory="d:/session"/>
+
+    </Manager>
+
+</Context>

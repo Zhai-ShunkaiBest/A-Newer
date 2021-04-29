@@ -1,9 +1,12 @@
-package com.msb.controller;
+package com.cliffside.controller;
 
-import com.msb.pojo.PageBean;
-import com.msb.pojo.Student;
-import com.msb.service.StudentService;
-import com.msb.service.impl.StudentServiceImpl;
+import com.cliffside.pojo.PageBean;
+import com.cliffside.pojo.Student;
+import com.cliffside.service.StudentService;
+import com.cliffside.pojo.PageBean;
+import com.cliffside.pojo.Student;
+import com.cliffside.service.StudentService;
+import com.cliffside.service.impl.StudentServiceImpl;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

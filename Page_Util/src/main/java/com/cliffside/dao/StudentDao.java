@@ -1,11 +1,11 @@
-package com.msb.dao;
+package com.cliffside.dao;
 
-import com.msb.pojo.Student;
+import com.cliffside.pojo.Student;
 
 import java.util.List;
 
 /**
- * @Author: Ma HaiYang
+ * @Author:
  * @Description: MircoMessage:Mark_7001
  */
 public interface StudentDao {

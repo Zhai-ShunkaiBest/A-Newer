@@ -1,7 +1,35 @@
-package com.cliffside.listener;/**
- * 
+package com.cliffside.listener;
+
+import javax.servlet.annotation.WebListener;
+import javax.servlet.http.HttpSessionAttributeListener;
+import javax.servlet.http.HttpSessionBindingEvent;
+import javax.servlet.http.HttpSessionEvent;
+import javax.servlet.http.HttpSessionListener;
+
+/**
  * @author cliffside
  * @date 2021-04-29 21:43
- *
- */public class MySessionListener {
+ */
+@WebListener
+public class MySessionListener implements HttpSessionListener, HttpSessionAttributeListener {
+    @Override
+    public void sessionCreated(HttpSessionEvent se) {
+        System.out.println("任何一个Session对象创建");
+    }
+    @Override
+    public void sessionDestroyed(HttpSessionEvent se) {
+        System.out.println("任何一个Session对象的销毁");
+    }
+    @Override
+    public void attributeAdded(HttpSessionBindingEvent se) {
+        System.out.println("任何一个Session对象中添加了数据");
+    }
+    @Override
+    public void attributeRemoved(HttpSessionBindingEvent se) {
+        System.out.println("任何一个Session对象中移除了数据");
+    }
+    @Override
+    public void attributeReplaced(HttpSessionBindingEvent se) {
+        System.out.println("任何一个Session对象中修改了数据");
+    }
 }

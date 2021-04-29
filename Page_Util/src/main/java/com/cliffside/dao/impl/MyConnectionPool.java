@@ -1,7 +1,7 @@
-package com.msb.dao.impl;
+package com.cliffside.dao.impl;
 
 
-import com.msb.util.PropertiesUtil;
+import com.cliffside.util.PropertiesUtil;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -9,7 +9,7 @@ import java.sql.SQLException;
 import java.util.LinkedList;
 
 /**
- * @Author: Ma HaiYang
+ * @Author:
  * @Description: MircoMessage:Mark_7001
  */
 public class MyConnectionPool {

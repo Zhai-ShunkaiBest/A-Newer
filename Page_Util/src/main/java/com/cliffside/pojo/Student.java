@@ -1,9 +1,9 @@
-package com.msb.pojo;
+package com.cliffside.pojo;
 
 import java.io.Serializable;
 
 /**
- * @Author: Ma HaiYang
+ * @Author:
  * @Description: MircoMessage:Mark_7001
  */
 public class Student  implements Serializable {

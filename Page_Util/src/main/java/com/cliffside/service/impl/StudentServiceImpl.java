@@ -1,15 +1,20 @@
-package com.msb.service.impl;
+package com.cliffside.service.impl;
 
-import com.msb.dao.StudentDao;
-import com.msb.dao.impl.StudentDaoImpl;
-import com.msb.pojo.PageBean;
-import com.msb.pojo.Student;
-import com.msb.service.StudentService;
+import com.cliffside.dao.StudentDao;
+import com.cliffside.dao.impl.StudentDaoImpl;
+import com.cliffside.pojo.PageBean;
+import com.cliffside.pojo.Student;
+import com.cliffside.service.StudentService;
+import com.cliffside.dao.StudentDao;
+import com.cliffside.dao.impl.StudentDaoImpl;
+import com.cliffside.pojo.PageBean;
+import com.cliffside.pojo.Student;
+import com.cliffside.service.StudentService;
 
 import java.util.List;
 
 /**
- * @Author: Ma HaiYang
+ * @Author:
  * @Description: MircoMessage:Mark_7001
  */
 public class StudentServiceImpl implements StudentService {
@@ -17,7 +22,7 @@ public class StudentServiceImpl implements StudentService {
 
     // 做分页数据封装的业务处理
     @Override
-    public PageBean<Student> findByPage(String stuname,String stuage,int currentPage, int pageSize) {
+    public PageBean<Student> findByPage(String stuname, String stuage, int currentPage, int pageSize) {
         // 查询出该页所有数据
         List<Student> students = studentDao.findByPage( stuname, stuage,currentPage, pageSize);
         // 查询出有多少条数据

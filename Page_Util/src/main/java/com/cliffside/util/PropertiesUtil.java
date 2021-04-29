@@ -1,11 +1,11 @@
-package com.msb.util;
+package com.cliffside.util;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
 /**
- * @Author: Ma HaiYang
+ * @Author:
  * @Description: MircoMessage:Mark_7001
  */
 public class PropertiesUtil {

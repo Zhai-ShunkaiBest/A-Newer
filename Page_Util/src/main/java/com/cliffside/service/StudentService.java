@@ -1,10 +1,10 @@
-package com.msb.service;
+package com.cliffside.service;
 
-import com.msb.pojo.PageBean;
-import com.msb.pojo.Student;
+import com.cliffside.pojo.PageBean;
+import com.cliffside.pojo.Student;
 
 /**
- * @Author: Ma HaiYang
+ * @Author:
  * @Description: MircoMessage:Mark_7001
  */
 public interface StudentService {

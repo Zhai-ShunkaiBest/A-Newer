@@ -1,19 +1,19 @@
-package com.msb.dao.impl;
+package com.cliffside.dao.impl;
 
-import com.msb.dao.StudentDao;
-import com.msb.pojo.Student;
+import com.cliffside.dao.StudentDao;
+import com.cliffside.pojo.Student;
+import com.cliffside.dao.StudentDao;
+import com.cliffside.pojo.Student;
 
-
-import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @Author: Ma HaiYang
+ * @Author:
  * @Description: MircoMessage:Mark_7001
  */
 public class StudentDaoImpl extends BaseDao implements StudentDao {
     @Override
-    public List<Student> findByPage(String stuname,String stuage,int currentPage, int pageSize) {
+    public List<Student> findByPage(String stuname, String stuage, int currentPage, int pageSize) {
         StringBuilder sql=new StringBuilder("select  * from student where 1=1 ");
         if(null != stuname && !"".equals(stuname)) {
             sql.append("and stuname like ? ");

@@ -1,10 +1,10 @@
-package com.msb.pojo;
+package com.cliffside.pojo;
 
 import java.io.Serializable;
 import java.util.List;
 
 /**
- * @Author: Ma HaiYang
+ * @Author:
  * @Description: MircoMessage:Mark_7001
  */
 public class PageBean<T> implements Serializable {

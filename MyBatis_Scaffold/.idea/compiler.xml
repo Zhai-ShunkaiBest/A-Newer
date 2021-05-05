@@ -2,19 +2,22 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="SpringBoot_Scaffold" />
         <module name="Page_Util" />
         <module name="Active-MQ-1" />
+        <module name="MyBatis_Resource" />
+        <module name="SpringBoot_Scaffold" />
         <module name="Active-MQ-Boot" />
         <module name="Spring_Scaffold" />
-        <module name="MyBatis_Scaffold" />
+        <module name="MyBatis01" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="MyBatis_ResourceCode" target="11" />
       <module name="Servlet" target="11" />
     </bytecodeTargetLevel>
   </component>

@@ -10,7 +10,14 @@
         <option value="$PROJECT_DIR$/../Active-MQ-Boot/pom.xml" />
         <option value="$PROJECT_DIR$/../SpringBoot_Scaffold/pom.xml" />
         <option value="$PROJECT_DIR$/../Page_Util/pom.xml" />
+        <option value="$PROJECT_DIR$/../MyBatis_Resource/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/MyBatis_Resource/pom.xml" />
+        <option value="$PROJECT_DIR$/MyBatis_ResourceCode/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">

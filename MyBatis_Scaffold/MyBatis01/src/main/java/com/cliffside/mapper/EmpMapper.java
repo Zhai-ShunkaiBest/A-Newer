@@ -12,6 +12,7 @@ import java.util.Map;
  * @date 2021-04-30 11:24
  */
 public interface EmpMapper {
+    Emp findOne();
     /**
      * 该方法用于查询全部的员工信息
      * @return 全部员工信息封装的Emp对象的List集合
@@ -38,5 +39,13 @@ public interface EmpMapper {
     List<Emp> findByDeptnoAndSal3(Emp emp);
 
     List<Emp> findByDeptnoAndSal4(@Param("empa") Emp empa,@Param("empb") Emp empb);
+
+    /**
+     * 根据名字做模糊查询
+     * @param name 模糊查询的文字
+     * @return  Emp对象List集合
+     */
+    List<Emp> findByEname(String name);
+
 
 }

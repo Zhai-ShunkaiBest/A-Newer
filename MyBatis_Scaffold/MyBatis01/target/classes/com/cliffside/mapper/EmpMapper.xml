@@ -8,11 +8,11 @@
      public Emp findOne();
      id 相当于方法名
      resultType 相当于返回值类型
-         sql语句的查询结果用哪个类来进行封装 如果返回值类型是集合,这里写的也是集合中的元素对应的类,不是集合本身作为类型
+        sql语句的查询结果用哪个类来进行封装 如果返回值类型是集合,这里写的也是集合中的元素对应的类,不是集合本身作为类型
      paramaterType 参数类型
      SQL语句就是具体的方法体的实现
      -->
-    <select id="findOne" resultType="emp" >
+    <select id="findOne" resultType="com.cliffside.pojo.Emp" >
         select * from emp where empno = 7499
     </select>
     <!--
@@ -30,16 +30,16 @@
         select * from emp
     </select>
 
-    <!--
-    返回多个对象的Map集合
-    把查询出来的数据中的某一列作为键,整条数据封装的对象作为值
-    public Map<key,Emp> findEmpMap()
-    <empno,Emp>
-    <key,Emp>
-    -->
-    <select id="findEmpMap" resultType="map">
-        select * from emp
-    </select>
+<!--    &lt;!&ndash;-->
+<!--    返回多个对象的Map集合-->
+<!--    把查询出来的数据中的某一列作为键,整条数据封装的对象作为值-->
+<!--    public Map<key,Emp> findEmpMap()-->
+<!--    <empno,Emp>-->
+<!--    <key,Emp>-->
+<!--    &ndash;&gt;-->
+<!--    <select id="findEmpMap" resultType="map">-->
+<!--        select * from emp-->
+<!--    </select>-->
 
 
     <!--
@@ -161,6 +161,9 @@
         <!-- select * from emp where deptno =#{arg0.deptno} and sal >= #{arg1.sal} -->
         select * from emp where deptno =#{param1.deptno} and sal >= #{param2.sal}
         <!-- select * from emp where deptno =#{empa.deptno} and sal >= #{empb.sal}-->
+    </select>
+    <select id="findByEname" resultType="com.cliffside.pojo.Emp">
+        select * from emp where ename like concat('%',#{name},'%')
     </select>
 
 </mapper>

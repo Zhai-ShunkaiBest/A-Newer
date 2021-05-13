@@ -1,4 +1,5 @@
 package proxy;
+
 import com.cliffside.mapper.EmpMapper;
 import com.cliffside.pojo.Dept;
 import com.cliffside.pojo.Emp;
@@ -36,6 +37,7 @@ public class Test1 {
 
     @Test
     public void testFindAll(){
+
         EmpMapper empMapper=sqlSession.getMapper(EmpMapper.class);
         List<Emp> emps = empMapper.findAll();
         emps.forEach(System.out::println);

@@ -31,9 +31,7 @@
         </environment>
     </environments>
     <mappers>
-        <mapper class="com.cliffside.mapper.EmpMapper"/>
-        <mapper resource="com/cliffside/mapper/DeptMapper.xml"/>
-        <mapper resource="com/cliffside/mapper/EmpMapper.xml"/>
+        <package name="com.cliffside.mapper"/>
     </mappers>
 
 

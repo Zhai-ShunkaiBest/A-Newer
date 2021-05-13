@@ -11,10 +11,12 @@
         <option value="$PROJECT_DIR$/../SpringBoot_Scaffold/pom.xml" />
         <option value="$PROJECT_DIR$/../Page_Util/pom.xml" />
         <option value="$PROJECT_DIR$/../MyBatis_Resource/pom.xml" />
+        <option value="$PROJECT_DIR$/../MyBatis_Final/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/MyBatis02/pom.xml" />
         <option value="$PROJECT_DIR$/MyBatis_Resource/pom.xml" />
         <option value="$PROJECT_DIR$/MyBatis_ResourceCode/pom.xml" />
       </set>

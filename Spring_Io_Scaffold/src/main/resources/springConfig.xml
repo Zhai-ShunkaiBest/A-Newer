@@ -3,4 +3,11 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+    <bean id="empDao" class="top.cliffside.dao.impl.EmpDaoImpl">
+    </bean>
+    <bean id="user" class="top.cliffside.pojo.User" init-method="initUser" destroy-method="destoryUser">
+        <property name="username" value="cliff"></property>
+    </bean>
+
+    <bean id="myBeanProcesser" class="top.cliffside.pojo.beanPostProcessr.MyBeanProcesser"></bean>
 </beans>

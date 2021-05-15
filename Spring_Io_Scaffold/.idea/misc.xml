@@ -5,6 +5,9 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../Spring_Io_AOP/pom.xml" />
+        <option value="$PROJECT_DIR$/../Spring_JDBCtemplate/pom.xml" />
+        <option value="$PROJECT_DIR$/../Spring_Transaction/pom.xml" />
       </list>
     </option>
   </component>

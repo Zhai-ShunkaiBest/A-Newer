@@ -1,7 +1,23 @@
-package top.cliffside.pojo;/**
- * 
+package top.cliffside.pojo;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.io.Serializable;
+
+/**
  * @author cliffside
  * @date 2021-05-13 15:31
- *
- */public class ProjectRecord {
+ */
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+public class ProjectRecord implements Serializable {
+    private Integer empno;
+    private Integer pid;
+
+    // 组合一个Emp对象作为属性
+    private Emp emp;
+
 }

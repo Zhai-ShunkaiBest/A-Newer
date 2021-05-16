@@ -1,7 +1,9 @@
-package top.cliffside.dao;/**
- * 
+package top.cliffside.dao;
+
+/**
  * @author cliffside
  * @date 2021-05-15 13:17
- *
- */public class EmpDao {
+ */
+public interface EmpDao {
+    int addEmp(Integer empno,String ename,String job);
 }

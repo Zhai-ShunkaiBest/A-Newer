@@ -1,4 +1,4 @@
-package com.cliffside.util;
+package top.cliffside.util;
 
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;

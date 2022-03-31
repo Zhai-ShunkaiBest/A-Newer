@@ -111,7 +111,7 @@
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-webmvc</artifactId>
-      <version>5.3.5</version>
+      <version>5.3.18</version>
     </dependency>
     <!--jsp 和Servlet  可选-->
     <dependency>
